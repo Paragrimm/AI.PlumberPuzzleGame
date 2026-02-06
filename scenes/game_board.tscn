@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4npqx1vkytbm"]
+
+[ext_resource type="Script" path="res://scripts/game_board.gd" id="1_board"]
+
+[node name="GameBoard" type="GridContainer"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 340.0
+offset_bottom = 340.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 5
+script = ExtResource("1_board")

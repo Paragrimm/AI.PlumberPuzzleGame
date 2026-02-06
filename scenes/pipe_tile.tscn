@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpkm1xyj2wfxj"]
+
+[ext_resource type="Script" path="res://scripts/pipe_tile.gd" id="1_pipe"]
+[ext_resource type="Texture2D" uid="uid://dq5xhq7rgknvp" path="res://assets/pipe_straight.svg" id="2_texture"]
+
+[node name="PipeTile" type="TextureButton"]
+custom_minimum_size = Vector2(64, 64)
+texture_normal = ExtResource("2_texture")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("1_pipe")
