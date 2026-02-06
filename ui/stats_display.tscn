@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://w8n1tjym8udd"]
+
+[ext_resource type="Script" uid="uid://kqrqgmss36if" path="res://ui/stats_display.gd" id="1_script"]
+
+[node name="StatsDisplay" type="HBoxContainer" unique_id=1231408304]
+script = ExtResource("1_script")
+
+[node name="MoveCountLabel" type="Label" parent="." unique_id=754693249]
+layout_mode = 2
+text = "Züge: 0"
+
+[node name="ConnectionCountLabel" type="Label" parent="." unique_id=1530303825]
+layout_mode = 2
+text = "Verbindungen: 0"
+
+[node name="SolvedLabel" type="Label" parent="." unique_id=215462570]
+visible = false
+modulate = Color(0.3, 1, 0.3, 1)
+layout_mode = 2
+text = "Gelöst!"

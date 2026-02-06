@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ij6hg4ykth02"]
+
+[ext_resource type="Script" uid="uid://l47lyd1ivp51" path="res://ui/action_buttons.gd" id="1_script"]
+
+[node name="ActionButtons" type="HBoxContainer" unique_id=1665847359]
+script = ExtResource("1_script")
+
+[node name="ResetButton" type="Button" parent="." unique_id=1803345786]
+layout_mode = 2
+text = "Reset"
+
+[node name="NextPuzzleButton" type="Button" parent="." unique_id=45868854]
+visible = false
+layout_mode = 2
+text = "Nächstes Puzzle"

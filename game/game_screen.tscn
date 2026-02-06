@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cjbqn5qes7fhj"]
+
+[ext_resource type="Script" uid="uid://cev3tygq8fg8e" path="res://game/game_screen.gd" id="1_ndm0n"]
+[ext_resource type="Script" uid="uid://dwwvh5dop2wqi" path="res://game/game_manager.gd" id="2_p6hro"]
+[ext_resource type="PackedScene" uid="uid://w8n1tjym8udd" path="res://ui/stats_display.tscn" id="3_f8ett"]
+[ext_resource type="PackedScene" uid="uid://d0uuy5von2pcx" path="res://domains/grid/grid.tscn" id="5_lol8h"]
+[ext_resource type="PackedScene" uid="uid://ij6hg4ykth02" path="res://ui/action_buttons.tscn" id="8_68e5p"]
+
+[node name="GameScreen" type="Control" unique_id=888227507]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ndm0n")
+
+[node name="GameManager" type="Node" parent="." unique_id=2066904112]
+script = ExtResource("2_p6hro")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=927280231]
+layout_mode = 0
+
+[node name="StatsDisplay" parent="VBoxContainer" unique_id=1231408304 instance=ExtResource("3_f8ett")]
+layout_mode = 2
+
+[node name="GridContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1761441925]
+layout_mode = 2
+
+[node name="GridView" parent="VBoxContainer/GridContainer" unique_id=1297355214 instance=ExtResource("5_lol8h")]
+layout_mode = 2
+
+[node name="ActionButtons" parent="VBoxContainer" unique_id=1665847359 instance=ExtResource("8_68e5p")]
+layout_mode = 2

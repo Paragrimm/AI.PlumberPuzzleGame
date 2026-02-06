@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d0uuy5von2pcx"]
+
+[ext_resource type="Script" uid="uid://do7o6yklswvbn" path="res://domains/grid/grid_view.gd" id="1_u1cvi"]
+[ext_resource type="PackedScene" uid="uid://cjffww50pnaph" path="res://domains/tile/tile.tscn" id="2_tile"]
+
+[node name="Grid" type="GridContainer" unique_id=1297355214]
+script = ExtResource("1_u1cvi")
+tile_scene = ExtResource("2_tile")

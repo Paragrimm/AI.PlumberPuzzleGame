@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cjffww50pnaph"]
+
+[ext_resource type="Script" uid="uid://brur6b4c01p05" path="res://domains/tile/tile_view.gd" id="1_s1e6p"]
+
+[node name="Tile" type="Control" unique_id=1134573836]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_s1e6p")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1207792474]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0.88, 0.88, 0.88, 1)
+
+[node name="PipeContainer" type="Control" parent="." unique_id=1592982021]
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+pivot_offset = Vector2(32, 32)
+mouse_filter = 2
+
+[node name="PipeStraight" type="ColorRect" parent="PipeContainer" unique_id=446580757]
+visible = false
+layout_mode = 0
+offset_left = 28.0
+offset_right = 36.0
+offset_bottom = 64.0
+mouse_filter = 2
+color = Color(0.18, 0.18, 0.18, 1)
+
+[node name="PipeCorner" type="Control" parent="PipeContainer" unique_id=193883735]
+visible = false
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="VerticalPart" type="ColorRect" parent="PipeContainer/PipeCorner" unique_id=1955033762]
+layout_mode = 0
+offset_left = 28.0
+offset_right = 36.0
+offset_bottom = 36.0
+mouse_filter = 2
+color = Color(0.18, 0.18, 0.18, 1)
+
+[node name="HorizontalPart" type="ColorRect" parent="PipeContainer/PipeCorner" unique_id=2106840832]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 28.0
+offset_right = 64.0
+offset_bottom = 36.0
+mouse_filter = 2
+color = Color(0.18, 0.18, 0.18, 1)
+
+[node name="PipeSingle" type="ColorRect" parent="PipeContainer" unique_id=716011754]
+visible = false
+layout_mode = 0
+offset_left = 28.0
+offset_right = 36.0
+offset_bottom = 36.0
+mouse_filter = 2
+color = Color(0.18, 0.18, 0.18, 1)
